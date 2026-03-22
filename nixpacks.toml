@@ -1,12 +1,2 @@
 [phases.build]
 cmds = ["mkdir -p uploads/ocr"]
-```
-→ **Commit changes**
-
-**3.** **"Add file → Upload files"** ile ZIP'teki `Caddyfile` dosyasını repo'ya ekle → **Commit changes**
-
-**4.** Railway otomatik yeniden deploy başlatır (1-2 dakika bekle)
-
-**5.** Tekrar dene:
-```
-https://allerjiapp-production.up.railway.app
