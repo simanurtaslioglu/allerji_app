@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["php81", "php81Extensions.pdo", "php81Extensions.pdo_mysql", "php81Extensions.mbstring", "php81Extensions.gd"]
+
+[phases.build]
+cmds = ["mkdir -p uploads/ocr"]
+
+[start]
+cmd = "php -S 0.0.0.0:$PORT -t ."
