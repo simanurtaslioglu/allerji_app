@@ -1,8 +1,12 @@
-[phases.setup]
-nixPkgs = ["php81", "php81Extensions.pdo", "php81Extensions.pdo_mysql", "php81Extensions.mbstring", "php81Extensions.gd"]
-
 [phases.build]
 cmds = ["mkdir -p uploads/ocr"]
+```
+→ **Commit changes**
 
-[start]
-cmd = "php -S 0.0.0.0:$PORT -t ."
+**3.** **"Add file → Upload files"** ile ZIP'teki `Caddyfile` dosyasını repo'ya ekle → **Commit changes**
+
+**4.** Railway otomatik yeniden deploy başlatır (1-2 dakika bekle)
+
+**5.** Tekrar dene:
+```
+https://allerjiapp-production.up.railway.app
