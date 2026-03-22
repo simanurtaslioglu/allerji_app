@@ -1,0 +1,1 @@
+# allerji_app
